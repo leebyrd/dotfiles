@@ -1,0 +1,23 @@
+### Setup Silabs Wireless Dev Settings
+
+export STUDIO_PATH=/Applications/Simplicity\ Studio.app/Contents/MacOS/
+export SUPER_PATH=/Users/lebyrd/workspace/thread/super6
+export IAR_PATH=/Users/lebyrd/workspace/thread/toolchain/iar_ew_7802_win32
+
+# Put super in the path
+export PATH=$PATH:$SUPER_PATH
+
+# Setup the IAR directories
+export ARM_IAR6_DIR=$IAR_PATH
+export ARM_IAR7_DIR=$IAR_PATH
+
+# Setup the JAM prefix
+export JAMEXE_PREFIX=wine
+
+# Setup the proper compilers
+export E_CC="gcc -arch i386"
+export E_CPP="g++ -arch i386"
+
+# Setup the path needed for uncrustify
+export PYTHONPATH=$SUPER_PATH
+
